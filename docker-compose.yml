@@ -1,0 +1,77 @@
+version: '3'
+
+services:
+  adoptjreopenj9:
+    build: ./adopt-11-jre-openj9
+    image: springboot:adoptjreopenj9
+    container_name: sboot_adoptjreopenj9
+    ports:
+      - 24000:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
+
+  adoptjrehotspot:
+    build: ./adopt-11-jre-hotspot
+    image: springboot:adoptjrehotspot
+    container_name: sboot_adoptjrehotspot
+    ports:
+      - 24001:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
+
+  openjdk:
+    build: ./openjdk
+    image: springboot:openjdk
+    container_name: sboot_openjdk
+    ports:
+      - 24002:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
+
+  distroless:
+    build: ./dlessjdk
+    image: springboot:distroless
+    container_name: sboot_distroless
+    ports:
+      - 24003:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
+
+  amazoncorretto:
+    build: ./amazoncorretto
+    image: springboot:amazoncorretto
+    container_name: sboot_amazoncorretto
+    ports:
+      - 24004:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
