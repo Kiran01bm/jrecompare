@@ -75,3 +75,37 @@ services:
         reservations:
           cpus: '0.25'
           memory: 50M
+
+  adoptjreopenj9c1:
+    build: ./adopt-11-jre-openj9c1
+    image: springboot:adoptjreopenj9c1
+    container_name: sboot_adoptjreopenj9c1
+    ports:
+      - 24005:8080
+    volumes:
+      - /Users/kiranmuddukrishna/Downloads/classcache:/cache
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
+
+  adoptjreopenj9c2:
+    build: ./adopt-11-jre-openj9c2
+    image: springboot:adoptjreopenj9c2
+    container_name: sboot_adoptjreopenj9c2
+    ports:
+      - 24006:8080
+    volumes:
+      - /Users/kiranmuddukrishna/Downloads/classcache:/cache
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M

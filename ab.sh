@@ -4,7 +4,7 @@ echo "Default is 10,000 Requests fired at 10 concurrency level and max wait of 1
 
 i="0"
 
-while [ $i -lt 5 ]
+while [ $i -lt 7 ]
 do
 
 # 60 secs of sleep on the 1st run too to provide an opportunity to clean-up or terminate any runtimes on the system before the test begins.

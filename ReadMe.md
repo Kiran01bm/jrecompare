@@ -7,6 +7,8 @@ The following Runtimes are compared
 3. OpenJDK
 4. Distroless JRE
 5. AWS - Amazoncorretto
+6. Adopt JDK - OpenJ9 - With ClassSharing
+7. Same as 6
 
 ## Image Sizes
 ![Image Sizes](images/imageSizes.png?raw=true "Image Sizes")
@@ -15,21 +17,37 @@ The following Runtimes are compared
 Note: Take the start-up times with a pinch of salt as it was on my MAC which had Kube, Monitoring Stack (Promeetheus, Cadvisor, Grafana, Alert Manager, NodeExporter) and  Docker Swarm running during the test.
 ![Start-Up Times](images/startUpTimes.png?raw=true "Start-up Times")
 
-## Run #1 and Steady State
+## Tests
+1. Run without ClassSharing for OpenJ9
+2. Run with ClassSharing for OpenJ9
 
-### Run #1
+## Run with ClassSharing for OpenJ9
+### BootUp
+![Boot Up](images/classSharingBootUp.png?raw=true "ClassSharing BootUp")
+
+### During Test
+![During Test](images/classSharingRun.png?raw=true "ClassSharing During Test")
+
+### Post Test
+![Boot Up](images/classSharingPostRun.png?raw=true "ClassSharing Post Test")
+
+## Run without ClassSharing for OpenJ9
+
+### Run #1 and Steady State
+
+#### Run #1
 ![1st Run](images/1-Test.png?raw=true "1st Run")
 
-### Run #1 - Post Test
+#### Run #1 - Post Test
 ![1st Run Post Test](images/1-PostTest.png?raw=true "1st Run Post test")
 
 
-## Run #2 and Steady State
+### Run #2 and Steady State
 
-### Run #2
+#### Run #2
 ![2nd Run](images/2-Test.png?raw=true "2nd Run")
 
-### Run #2 - Post Test
+#### Run #2 - Post Test
 ![2nd Run Post Test](images/2-PostTest.png?raw=true "2nd Run Post test")
 
 
