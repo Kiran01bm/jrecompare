@@ -13,6 +13,9 @@ The following Runtimes are compared
 ## Image Sizes
 ![Image Sizes](images/imageSizesNew.png?raw=true "Image Sizes")
 
+## Threat Posture
+![Threat Posture](images/threatPosture.png?raw=true "Threat Posture")
+
 ## Start-up Times
 Note: Take the start-up times with a pinch of salt as it was on my MAC which had Kube, Monitoring Stack (Promeetheus, Cadvisor, Grafana, Alert Manager, NodeExporter) and  Docker Swarm running during the test.
 ![Start-Up Times](images/startUpTimesNew.png?raw=true "Start-up Times")
