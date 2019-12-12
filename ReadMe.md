@@ -18,8 +18,8 @@ Note: Take the start-up times with a pinch of salt as it was on my MAC which had
 ![Start-Up Times](images/startUpTimes.png?raw=true "Start-up Times")
 
 ## Tests
-1. Run without ClassSharing for OpenJ9
-2. Run with ClassSharing for OpenJ9
+1. Run without ClassSharing for OpenJ9 - Notice Decrease in Memory and CPU. But spike in CPU consumption on boot-up.
+2. Run with ClassSharing for OpenJ9 - Notice Improvement in Boot Time and Increase in Memory Consumption but Drop in CPU Utilisation dues to Optimisation loaded into memory.
 
 ## Run with ClassSharing for OpenJ9
 ### BootUp
