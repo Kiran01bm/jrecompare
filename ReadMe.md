@@ -31,6 +31,10 @@ Note: Take the start-up times with a pinch of salt as it was on my MAC which had
 ### Post Test
 ![Boot Up](images/classSharingPostRun.png?raw=true "ClassSharing Post Test")
 
+### Class Cache Size
+![Boot Up](images/classCacheSize.png?raw=true "ClassCache Size")
+
+
 ## Run without ClassSharing for OpenJ9
 
 ### Run #1 and Steady State
