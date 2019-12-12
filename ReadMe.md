@@ -11,11 +11,11 @@ The following Runtimes are compared
 7. Same as 6
 
 ## Image Sizes
-![Image Sizes](images/imageSizes.png?raw=true "Image Sizes")
+![Image Sizes](images/imageSizesNew.png?raw=true "Image Sizes")
 
 ## Start-up Times
 Note: Take the start-up times with a pinch of salt as it was on my MAC which had Kube, Monitoring Stack (Promeetheus, Cadvisor, Grafana, Alert Manager, NodeExporter) and  Docker Swarm running during the test.
-![Start-Up Times](images/startUpTimes.png?raw=true "Start-up Times")
+![Start-Up Times](images/startUpTimesNew.png?raw=true "Start-up Times")
 
 ## Tests
 1. Run without ClassSharing for OpenJ9 - Notice Decrease in Memory and CPU. But spike in CPU consumption on boot-up.
