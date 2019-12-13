@@ -109,3 +109,33 @@ services:
         reservations:
           cpus: '0.25'
           memory: 50M
+
+  graalvm:
+    build: ./graalvm
+    image: springboot:graalvm
+    container_name: sboot_graalvm
+    ports:
+      - 24007:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
+
+  graalvmnativecopile:
+    build: ./graalvmnativecopile
+    image: springboot:graalvmnativecopile
+    container_name: sboot_graalvmnativecopile
+    ports:
+      - 24008:8080
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 100M
+        reservations:
+          cpus: '0.25'
+          memory: 50M
